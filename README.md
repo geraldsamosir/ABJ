@@ -1,7 +1,6 @@
 # ABJ
 
-adalah skema kerangka kerj forntend 
+adalah skema kerangka kerja forntend 
 berbasis angular, bootsrap dan jquery
 
 By: Gerald Halomoan Samosir
-
