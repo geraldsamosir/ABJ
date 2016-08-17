@@ -9,6 +9,7 @@ app.controller("ctrlhome", function($rootScope,$scope,localStorageService) {
     //function  tambahkan isi localstorage
     $scope.set_local = function(){
       localStorageService.set($scope.name, $scope.title);
+      localStorageService.set('nama' ,'gerald');
     }
 
 
