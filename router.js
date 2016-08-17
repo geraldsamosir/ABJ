@@ -6,7 +6,7 @@
 */
 
 app.config(['$routeProvider',
-  function($routeProvider ) {
+  function($routeProvider ,localStorageServiceProvider) {
 
     $routeProvider
       .when('/',{
@@ -17,4 +17,4 @@ app.config(['$routeProvider',
          templateUrl:View+"/404.html"
       })
     }
-  ]);
+  ,]);

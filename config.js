@@ -16,6 +16,7 @@ var server= {
 var Controller = "./controller";
 var app = angular.module("myapp",
           [
+            'LocalStorageModule',
             'ngRoute'
           ]
 );
