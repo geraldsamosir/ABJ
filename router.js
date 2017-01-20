@@ -5,16 +5,22 @@
   app...
 */
 
-app.config(['$routeProvider',
-  function($routeProvider ,localStorageServiceProvider) {
-
+app.config(
+  function($routeProvider ,$locationProvider,localStorageServiceProvider) {
+    $locationProvider.html5Mode(false).hashPrefix('✓')
     $routeProvider
       .when('/',{
          templateUrl :View+"/home.html",
          controller  :"ctrlhome"
         })
-       .otherwise({
-         templateUrl:View+"/404.html"
+      .when('/home',{
+          templateUrl :View+"/404.html",
+         controller  :"ctrlhome"
       })
+       .otherwise({
+         templateUrl:View+"/404.html"   
+      })
+     ;
+     
     }
-  ,]);
+    );
